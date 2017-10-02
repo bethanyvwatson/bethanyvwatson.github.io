@@ -1,7 +1,11 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: rgba(44, 53, 55, .85);
+    background-color: rgba(252,252,252, .85);
+    color: rgba(44, 53, 55, .85);
+}
+header {
+    background-color: rgba(44, 53, 55, 1);
     color: rgba(252,252,252, .85);
 }
 nav ul, footer ul {
@@ -14,9 +18,9 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
+a, a:visited {
     text-decoration: underline;
-    color: color: rgba(252,252,252, 1);
+    color: color: rgba(44, 53, 55, .85);
 }
 a:hover {
     color: rgba(33,165,195, 1);
@@ -28,10 +32,11 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: rgba(252,252,252,1);
+    color: rgba(44, 53, 55, .85);
 }
 footer {
-    border-top: 1px solid rgba(252,252,252, .85);
+    background-color: rgba(44, 53, 55, 1);
+    color: rgba(252,252,252, .85);
     font-size: .8em;
 }
 
