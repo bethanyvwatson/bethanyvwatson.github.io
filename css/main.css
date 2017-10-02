@@ -1,6 +1,8 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: rgba(44, 53, 55, .85);
+    color: rgba(252,252,252, .85);
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -13,11 +15,10 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
-    color: #999;
+    text-decoration: underline;
 }
 a:hover {
-    text-decoration: underline;
+    color: rgba(33,165,195, 1);
 }
 h1 {
     font-size: 3em;
@@ -26,7 +27,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: rgba(252,252,252,1);
 }
 footer {
     border-top: 1px solid #d5d5d5;
