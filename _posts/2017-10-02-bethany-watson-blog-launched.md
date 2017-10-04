@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bethany Watson's Blog Launches"
+title: "Beth's Blog Launches"
 date: 2017-10-02
 ---
 

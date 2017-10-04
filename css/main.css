@@ -1,12 +1,8 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: rgba(252,252,252, .85);
-    color: rgba(44, 53, 55, .85);
-}
-header {
-    background-color: rgba(44, 53, 55, 1);
-    color: rgba(252,252,252, .85);
+    background-color: rgba(114,118,119, .22);
+    color: rgba(44, 53, 55,1);
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -20,23 +16,33 @@ nav ul li, footer ul li {
 }
 a, a:visited {
     text-decoration: underline;
-    color: color: rgba(44, 53, 55, .85);
+    color: rgba(44, 53, 55, 1);
 }
-a:hover {
-    color: rgba(33,165,195, 1);
+a:hover, a:focus {
+    color: rgba(44, 53, 55, .60);
 }
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: rgba(44, 53, 55, .85);
+    font-weight: bold;
 }
+
+h2 {
+    color: rgba(44, 53, 55,1);
+}
+
+h3 {
+    color: rgba(44, 53, 55, .85);
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: rgba(44, 53, 55, .85);
+    color: rgba(44, 53, 55, 1);
 }
 footer {
-    background-color: rgba(44, 53, 55, 1);
-    color: rgba(252,252,252, .85);
+    border-top: 1px solid rgba(44, 53, 55, .85);
     font-size: .8em;
 }
 
