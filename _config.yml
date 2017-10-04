@@ -5,8 +5,8 @@ markdown:         kramdown
 title:            Beth Watson
 tagline:          'Software Developer'
 description:      'Ruby. SQL. Full-Stack Web.'
-url:              https://bethanyvwatson.github.io/
-baseurl:          /bethanyvwatson.github.io/
+url:              bethanyvwatson.github.io
+baseurl:          /
 
 author:           
   name:           'Beth Watson'
