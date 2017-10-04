@@ -1,3 +1,21 @@
-name: Bethany Watson, Software Developer
-markdown: kramdown
-theme: jekyll-theme-minimal
+# Dependencies
+markdown:         kramdown
+
+# Setup
+title:            Beth
+tagline:          'Software Developer'
+description:      'Ruby developer with full-stack web dev experience.'
+url:              http://www.bethanywatson.me
+baseurl:          /
+
+author:           
+  name:           'Beth Watson'
+  url:            http://www.bethanywatson.me
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:           
+  repo:           https://github.com/bethanyvwatson/bethanyvwatson.github.io
