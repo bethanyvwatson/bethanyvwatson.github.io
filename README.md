@@ -1,4 +1,4 @@
 # Developed using Poole with Hyde.
 
-For built-in pagination and RSS goodness (plus some slick theme options) checkout [Poole](http://getpoole.com). I've slightly modified the Hyde theme for this project.
+For tons of built-in goodness (including slick themes, pagination, RSS, and "Related Posts") checkout [Poole](http://getpoole.com). I've slightly modified Poole's Hyde theme for this project.
 
