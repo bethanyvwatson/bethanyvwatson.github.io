@@ -2,10 +2,10 @@
 markdown:         kramdown
 
 # Setup
-title:            Beth
+title:            Beth Watson
 tagline:          'Software Developer'
-description:      'Ruby developer with full-stack web dev experience.'
-url:              http://www.bethanywatson.me
+description:      'Ruby. SQL. Full-Stack Web.'
+url:              https://bethanyvwatson.github.io/
 baseurl:          /
 
 author:           
