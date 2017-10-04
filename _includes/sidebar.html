@@ -18,7 +18,7 @@
         <h3>Read About</h3>
         <ul>
         {% for category in site.categories %}
-          <a href="/category/{{ category[0] }}/" class="sidebar-nav-item">{{ category[0] | capitalize }}</a><br />
+          <a href="{{url}}/category/{{ category[0] }}/" class="sidebar-nav-item">{{ category[0] | capitalize }}</a><br />
         {% endfor %}
         </ul>
       </div>
