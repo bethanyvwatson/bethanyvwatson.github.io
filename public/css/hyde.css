@@ -45,7 +45,24 @@ html {
   }
 }
 
+/*
+* General Style Adjustments
+*/
+.page-title, .post-title {
+  color: rgba(33,165,195, 1);
+}
+h2, h3 {
+  color: rgba(44, 53, 55, .85);
+};
 
+a {
+  color: rgba(44, 53, 55,.85);
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: rgba(44, 53, 55, 1);
+}
 /*
  * Sidebar
  *
