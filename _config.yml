@@ -12,7 +12,6 @@ author:
   name:           'Beth Watson'
   url:            http://www.bethanywatson.me
 
-permalink:        pretty
 paginate:         5
 
 # Custom vars
