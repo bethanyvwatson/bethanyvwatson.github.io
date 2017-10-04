@@ -9,18 +9,19 @@
       <p class="lead">{{ site.description }}</p>
     </div>
     <nav class="sidebar-nav">
-      <a href="/">Home</a>
+      <a href="/" class="sidebar-nav-item">Home</a>
       |
-      <a href="{{ author.url }}">Dev Site</a>
+      <a href="{{ site.author.url }}" class="sidebar-nav-item" target="_blank">Dev Site</a>
       |
-      <a href="{{ author.url }}/contact">Contact</a>
-      <h3>Categories</h3>
-      <ul>
-      {% for category in site.categories %}
-        <a href="/category/{{ category[0] }}/" class="">{{ category[0] | capitalize }}</a><br />
-      {% endfor %}
-      </ul>
+      <a href="{{ site.author.url }}/contact" class="sidebar-nav-item" target="_blank">Contact</a>
+      <div class="categories">
+        <h3>Read About</h3>
+        <ul>
+        {% for category in site.categories %}
+          <a href="/category/{{ category[0] }}/" class="sidebar-nav-item">{{ category[0] | capitalize }}</a><br />
+        {% endfor %}
+        </ul>
+      </div>
     </nav>
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
