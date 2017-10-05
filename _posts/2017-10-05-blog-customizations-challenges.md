@@ -11,7 +11,7 @@ I used a premade Jekyll theme ([Hyde](https://github.com/poole/hyde)) to simplif
  Still, I couldn't resist adding a few customizations.
 
 ### Color Scheme
-To achieve "brand" continuity with my personal website, I copied the reduced-opacity styles and color scheme from [www.bethanywatson.com](http://www.bethanywatson.me).
+To achieve "brand" continuity with my personal website, I copied the reduced-opacity styles and color scheme from [www.bethanywatson.me](http://www.bethanywatson.me).
 
 ### Sidebar Responsiveness
 This theme features a striking, sticky sidebar. Out of the box, its built-in reponsive behavior causes the sidebar to pop to the top of the page on smaller screen-widths. Nifty! But if you have a lot of content in the sidebar, this content can quickly overwhelm the page. 
