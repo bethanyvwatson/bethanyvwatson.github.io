@@ -3,7 +3,7 @@ layout: post
 title: "Blog Development: Customizations"
 date: 2017-10-05
 categories: 
-  - development
+  - projects
 ---
 
 I used a premade Jekyll theme ([Hyde](https://github.com/poole/hyde)) to simplify development for this blog. Hyde's sticky sidebar suited my style, and the included features like "Related Posts" meant I could develop a full-featured site and still get to writing content quickly.
