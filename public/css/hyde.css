@@ -45,8 +45,22 @@ html {
   }
 }
 
+@media (max-height: 350px) {
+  .descr, .categories {
+    display: none;
+
+  }
+}
+
+@media (max-height: 500px) {
+  .descr {
+    display: none;
+
+  }
+}
 /*
 * General Style Adjustments
+* author: bethanyvwatson;
 */
 .page-title, .post-title {
   color: rgba(33,165,195, 1);
@@ -127,6 +141,10 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 a.sidebar-nav-item {
+  font-size: .8rem;
+}
+
+a.category {
   font-size: .8rem;
 }
 
