@@ -133,8 +133,7 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid rgba(44, 53, 55,1);
-  border-bottom: 1px solid rgba(44, 53, 55,1);
+  border-top: 1px solid rgba(44, 53, 55, .5);
 }
 
 abbr {
@@ -338,7 +337,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: rgba(44, 53, 55, .85);
 }
 .page-title,
 .post-title {
@@ -350,14 +349,14 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: rgba(44, 53, 55, .55);
 }
 
 /* Related posts */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(44, 53, 55, 1);
 }
 .related-posts {
   padding-left: 0;
@@ -368,11 +367,11 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #999;
+  color: rgba(44, 53, 55, .85);
 }
 .related-posts li a:hover {
-  color: #268bd2;
-  text-decoration: none;
+  color: rgba(33,165,195, .85);
+  text-decoration: underline;
 }
 .related-posts li a:hover small {
   color: inherit;
@@ -391,7 +390,7 @@ tbody tr:nth-child(odd) th {
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ccc;
+  color: rgba(44, 53, 55, .85);
   text-align: center;
 }
 
@@ -399,7 +398,7 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid rgba(44, 53, 55, .85);
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -407,7 +406,8 @@ tbody tr:nth-child(odd) th {
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #f5f5f5;
+  background-color: rgba(44, 53, 55, .95);
+  color: rgba(252,252,252, .5);
 }
 
 @media (min-width: 30em) {

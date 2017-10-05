@@ -7,9 +7,9 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }} | Categories: 
     {% assign sortedCategories = page.categories %}
     {% for category in sortedCategories %}
-        <span class="tag">
-            <a href="/category/{{ category }}">{{ category | capitalize }}</a>
-        </span>
+      <span class="tag">
+          <a href="/category/{{ category }}">{{ category | capitalize }}</a>
+      </span>
     {% endfor %}
   </span>
   {{ content }}
@@ -20,12 +20,10 @@ layout: default
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
+        <a href="{{ post.url }}" class="title-link">
+          {{ post.title }}
+        </a>
+        <small>{{ post.date | date_to_string }}</small>
       </li>
     {% endfor %}
   </ul>

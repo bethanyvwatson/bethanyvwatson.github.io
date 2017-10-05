@@ -48,14 +48,12 @@ html {
 @media (max-height: 350px) {
   .descr, .categories {
     display: none;
-
   }
 }
 
 @media (max-height: 500px) {
   .descr {
     display: none;
-
   }
 }
 /*
@@ -65,17 +63,22 @@ html {
 .page-title, .post-title {
   color: rgba(33,165,195, 1);
 }
+
+h1 {
+  color: rgba(33,165,195, 1);
+}
+
 h2, h3 {
   color: rgba(44, 53, 55, .85);
 };
 
-a {
+a.title-link {
   color: rgba(44, 53, 55,.85);
   text-decoration: underline;
 }
 
-a:hover, a:focus {
-  color: rgba(44, 53, 55, 1);
+a.title-link:hover, a.title-link:focus {
+  color: rgba(33,165,195, .85);
 }
 /*
  * Sidebar
