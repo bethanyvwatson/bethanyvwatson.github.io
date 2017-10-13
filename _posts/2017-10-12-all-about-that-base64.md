@@ -2,6 +2,8 @@
 layout: post
 title: "All About that Base(64)"
 date: 2017-10-12
+categories:
+  - informational
 ---
 
 Base64 encoding is a strategy used in computing to transform raw data into readily-decodable, transmission-safe strings of text. Encoding results in bloated-but-perfect obfuscations of the original data.
@@ -58,7 +60,7 @@ Encoding and decoding strings into Base64 is systematic; a patient, focused pers
 
 But the whole point of encoding data is to make it easily (quickly!) transmissable. Most programming languages have built-in functionality to deal with encoded strings. 
 
-Check out [this blog post](http://blog.bethanywatson.me/2017/10/12/decoding-base64-ruby-javascript.html) for examples of how to work with Base64 in Ruby.
+Check out [this blog post](http://blog.bethanywatson.me/ruby/javascript/2017/10/12/decoding-base64-ruby-javascript.html) for examples of how to work with Base64 in Ruby.
 
 
 
