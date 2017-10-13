@@ -21,10 +21,11 @@ Encoded, the string looks like this:
 > QSBodW1hbi1yZWFkYWJsZSBzdHJpbmcgd2l0aCBhIHNtaWxleSA6KQ==\n
 
 
-The decoded version of the string should equal `source_string` exactly.
+The decoded version of the string should equal `source_str` exactly.
 ```ruby
 decoded_str = Base64.decode64(encoded_str)
 source_str == decoded_str
+# true
 ```
 
 ### Decoding with String#unpack
@@ -68,4 +69,23 @@ unpacked_str.pack('m*')
 ```
 
 ## Bonus: Decoding Base64 in Javascript
+[Many browsers](http://caniuse.com/#feat=atob-btoa) have built-in support for Base64 encoding/decoding in Javascript.
+
+Open up a JS console and test it out. To encode a string, use the window function `btoa` ("b to a").
+
+```javascript
+var sourceStr = "A human-readable string with a smiley :)";
+
+var encodedStr = btoa(sourceStr);
+encodedStr
+// < "QSBodW1hbi1yZWFkYWJsZSBzdHJpbmcgd2l0aCBhIHNtaWxleSA6KQ=="
+```
+
+And to decode that string, use `atob`.
+
+```javascript
+var decodedStr = atob(encodedStr);
+decodedStr
+// < "A human-readable string with a smiley :)"
+```
 
