@@ -12,7 +12,7 @@ After two days of research, re-styling, and re-configuration, this development b
 + GitHub Pages and [Jekyll](https://jekyllrb.com/) 
 + [Poole](https://github.com/poole/poole), the Jekyll Butler by Mark Otto 
 + The [Hyde Jekyll Theme](https://github.com/poole/hyde), again by Mark Otto. 
-+ Color and opacity styles were taken from [my personal website](www.bethanywatson.me)
++ Color and opacity styles were taken from [my personal website](http://www.bethanywatson.me)
 
 ## Why Jekyll and Hyde?
 While I could have developed a blog app from scratch or mounted a blogging engine onto my existing Rails website, I wanted the focus of my development blog to be on the content --  not its development. Because Jekyll and GitHub pages are so well integrated, this combination seemed like a good choice for a blog with low overhead. 
