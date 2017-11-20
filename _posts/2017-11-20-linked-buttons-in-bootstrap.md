@@ -5,76 +5,61 @@ date: 2017-11-20
 categories:
   - twil
 ---
+As a practiced back-end programmer getting her feet wet in the front-end, I spent a little too much time trying to achieve the right look and feel for some button-y links on my website. The final solution proved painfully simple -- but I learned some new things about HTML5 Content Models and cross-browser behavior along the way!
 
 ## TWIL TL;DR
+* FireFox is an unforgiving friend.
 * Button elements should not contain links (or any other interactive content).
-* Chrome delivers its "best guess" functionality when provided invalid HTML.
-* Wrapping an anchor tag in a button-styled div creates "dead-space" in the button that does nothing when clicked.
+* Browsers can deliver their "best guess" functionality when provided invalid HTML, resulting in undefined behavior across browsers.
 
+## Naive Markup for Button-y Links
+To achieve a button-y appearance for my ever-so-important links, I nested the anchor tag inside of a button tag. You might recognize the `btn` class as a staple of the [Bootstrap front-end framework](https://getbootstrap.com/).
 
-## Invalid Button-y Links in HTML5
-
-On my personal website I call attention to important links by styling them as buttons. As a novice in front-end programming, getting the "right look" proved somewhat challenging as I fought against some of my own CSS rules regarding opacity.
-
-My first attempt to create button-y links resulted in the following Slim markup:
-
-```slim
-.button-styles
-  a href='/projects' View Projects
-```
-The resulting behavior proved misleading and unintuitive. Despite the button's inviting appearance, most of the apparently clickable area seemed dead -- only specifically clicking the link text produced the desired result.
-
-To solve this problem, I (naively) nested the anchor tag inside of a button tag.
-
-```slim
-button.button-styling
-  a href='/projects' View Projects
+```html
+<button class="btn">
+  <a href='/projects'>View Projects</a>
+</button>
 ```
 
-Now clicking any part of the button activated the link. Huzzah! With the links working well and looking snazzy, I pushed to GitHub, deployed to Heroku, and went merrily on my way.
+At first this markup seemed to do the trick. But while the resulting link appeared to work in Chrome and Safari, it did not work at all in FireFox. Alas.
 
-Weeks later, though, when demoing my site to a friend, the buttons seemed broken again. The problem appeared to be browser-dependent; the links worked in Chrome but not FireFox. A quick Google search revealed two things:
+As it turns out, the above markup is just plain incorrect HTML.
 
-1. Nesting an anchor tag inside of a button tag is actually invalid HTML.
-2. Chrome sometimes delivers its best guess for intended functionality when provided with invalid HTML.
+## Incorrect Use of HTML5 Interactive Content
 
-### Interactive Content in HTML5
+According to the HTML5 Content Model specifications, links and buttons both follow the models for [Interactive Content](https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#interactive-content). An element follows the Interactive Content Model if it has an "activation behavior" -- basically, if a user can click on it and reasonably expect something to happen. Makes sense.
 
-According to the HTML5 Content Models documentation, links and buttons both follow the models for Interactive Content. Basically, an element follows the Interactive Content Model if a user can activate it and reasonably expect something to happen. 
+When a user clicks on a "target" element, HTML5 specifications say that the user agent should trigger the behavior of the target or its parent element. If both the target and its parent do not have an activation behavior, then nothing happens. 
 
-More importantly, though, HTML5 specifications state that browsers should follow a greedy algorithm for determining which "activation behavior" to trigger. Browsers look for the interactive element that is closest to where the user clicked, and trigger that element's behavior. If a user clicks on something that is not an interactive element -- or if the clicked element does not have an activation behavior defined -- nothing happens.
+Knowing this, let's take a look at the markup again.
 
-Knowing this, it becomes more clear why nesting a link inside of a button results in unintended behavior.
-
-Here's the Slim markup again.
-
-```slim
-button.button-styling
-  a href='/projects' View Projects
+```html
+<button class="btn">
+  <a href='/projects'>View Projects</a>
+</button>
 ```
 
-As the "closest" interactive element to itself, the user agent invokes the button's activation behavior when clicked. The outer button element effectively renders the nested link element unreachable by HTML5's activation algorithm. 
+Now we can see that the outer button element effectively renders the nested link element unreachable by HTML5's activation algorithm. Upon clicking the button, the user agent recognizes the button as a valid interactive element and correctly executes its activation behavior (a plain button [legitimately does "nothing"](https://www.w3.org/TR/2011/WD-html5-20110525/the-button-element.html#attr-button-type) by default), totally bypassing the nested link.
 
-And since this particular button has no activation behavior defined, nothing happens. Alas.
+## But it Worked in Chrome and Safari!
 
-Well, lesson learned! 
+Checking the offending markup against an [HTML validator](https://html5.validator.nu/) confirms its invalidity. A link may not be nested in a button, and vice versa.
 
-## What Worked in the End
-It may come as no surprise that in the end, the correct markup required zero element nesting and an additional CSS rule:
+This incorrect markup appears to work in Chrome and Safari because [internet browsers have the freedom to present their best guess](https://www.w3.org/MarkUp/2004/xhtml-faq#whycare) for desired behavior when presented with incorrect HTML. In this case, Chrome and Safari activate the nested link *if* the user clicks *directly* on the link text. FireFox does not. I may never have realised I was writing incorrect HTML if FireFox hadn't prevented my buttons from working as I expected them to! 
 
-```css
-//SASS
-a.button-styling
+Or perhaps more fairly -- if FireFox hadn't allowed my buttons to behave exactly as they had been written...
+
+Thanks, FireFox! Lesson learned. 
+
+## Valid Button-y Links
+It may come as no surprise that in the end, the correct markup required zero element nesting and an additional SASS rule:
+
+```html
+<a class="btn" href='/projects'>View Projects</a>
+```
+```sass
+a.btn
   opacity: $desired-opacity-setting
 ```
-```slim
-//Slim Markup
-a.button-styling href='/projects' View Projects
-```
 
-
-
-
-
-
-
+As an added bonus, this solution makes the entire button-y area clickable! It wins on all accounts: useability, validity, and simplicity. 
