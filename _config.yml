@@ -4,7 +4,7 @@ markdown:         kramdown
 # Setup
 title:            Beth Watson
 tagline:          'Software Developer'
-description:      'Ruby. SQL. Full-Stack Web.'
+description:      'Development Blog'
 url:              http://bethanyvwatson.github.io
 baseurl:          ''
 
