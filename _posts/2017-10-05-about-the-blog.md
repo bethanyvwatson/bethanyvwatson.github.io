@@ -2,6 +2,7 @@
 layout: post
 title: "Blog Launched with Jekyll/GitHub Pages"
 date: 2017-10-05
+tags: blog jekyll github-pages
 categories: 
   - projects
 ---

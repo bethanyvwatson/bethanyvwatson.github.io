@@ -11,6 +11,13 @@ layout: default
           <a href="/category/{{ category }}">{{ category | capitalize }}</a>
       </span>
     {% endfor %}
+    | Tags: 
+    <span>
+      {% for tag in page.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a href="/tag/{{ tag_name }}">{{ tag_name }}&nbsp;</a>
+      {% endfor %}
+    </span>
   </span>
   {{ content }}
 </div>
