@@ -2,8 +2,9 @@
 layout: post
 title: "Blog Launched with Jekyll/GitHub Pages"
 date: 2017-10-05
+tags: blog jekyll
 categories: 
-  - projects
+  - software-development
 ---
 
 After two days of research, re-styling, and re-configuration, this development blog is finally ready for it's first "non-test" post!

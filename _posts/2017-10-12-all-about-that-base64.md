@@ -2,8 +2,9 @@
 layout: post
 title: "All About that Base(64)"
 date: 2017-10-12
+tags: ruby
 categories:
-  - informational
+  - software-development
 ---
 
 Base64 encoding is a strategy used in computing to transform raw data into readily-decodable, transmission-safe strings of text. Encoding results in bloated-but-perfect obfuscations of the original data.
