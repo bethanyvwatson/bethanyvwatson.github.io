@@ -2,9 +2,9 @@
 layout: post
 title: "Base64 Strings in Ruby (bonus JS)"
 date: 2017-10-12
+tags: code ruby javascript back-end front-end
 categories:
-  - ruby
-  - javascript
+  - software-development
 ---
 
 ## Working with Base64 in Ruby

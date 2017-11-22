@@ -2,8 +2,10 @@
 layout: post
 title: "This Week I Learned: Blasphemous Button-y Links in HTML5"
 date: 2017-11-20
+tags: code html front-end
 categories:
   - twil
+  - software-development
 ---
 As a practiced back-end programmer getting her feet wet in the front-end, I spent a little too much time trying to achieve the right look and feel for some button-y links on my website. The final solution proved painfully simple -- but I learned some new things about HTML5 Content Models and cross-browser behavior along the way!
 

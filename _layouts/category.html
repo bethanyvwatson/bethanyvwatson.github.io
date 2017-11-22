@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div>
-    <h1>Category: <small>{{ page.tag | capitalize}}</small></h1>
+    <h1>Category: <small>{{ page.title | capitalize}}</small></h1>
 
     {% for post in site.categories[page.tag] %}
       <div>
