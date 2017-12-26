@@ -9,3 +9,6 @@ jekyll
 rails
 ruby
 software-development
+net-neutrality
+fun
+writing
