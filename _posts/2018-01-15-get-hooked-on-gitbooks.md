@@ -24,7 +24,7 @@ I'm hooked.
 
 [GitBook](https://www.gitbook.com) is an open-source documentation tool that just *makes sense*. 
 
- Using GitBook seriously gives me the warm fuzzies. Its simple design appeals to my utilitarian leanings, and its ease of use appeases my inner lazy person. Sensible defaults abound. There's no cruft to sift through. I feel good when I'm writing my GitBook, and best of all, GitBook's beautiful published product makes me *look* good.
+ Using GitBook seriously gives me the warm fuzzies. Its simple design appeals to my utilitarian leanings, and its ease of use appeases my inner lazy person. Sensible defaults abound. There's no cruft to sift through. I feel good when I'm writing my GitBook, and best of all, GitBook's beautiful published product makes me *look* good online.
 
 I promise, nobody is paying me to say nice things about GitBook. I just really like this tool. I like to think that if more developers knew about it, there would be more -- better! -- documentation out there. 
 
@@ -67,6 +67,6 @@ Saving your document (“publishing” it) does not instantly update the doc in 
 
 # Go On, Give GitBook a Shot!
 
-Visit [www.gitbook.com](http://www.gitbook.com) to try GitBook today! I'm like 97% you won't regret it. 
+Visit [www.gitbook.com](http://www.gitbook.com) to try GitBook today! I'm like 97% sure you won't regret it. 
 
 
