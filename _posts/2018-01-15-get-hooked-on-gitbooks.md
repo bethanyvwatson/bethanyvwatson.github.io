@@ -12,7 +12,7 @@ categories:
   - writing
 ---
 
-I recently published a demo of *[Ruby Racko](https://github.com/bethanyvwatson/racko)*, a terminal-based card sorting gamewritten in Ruby. Now, I’ll be the first to admit: installing and running *Ruby Racko* can be a bit of a pain. You don’t need to be a developer to play it, but if you have zero experience using a command-line terminal, you’re probably going to have a rough time. 
+I recently published a demo of *[Ruby Racko](https://github.com/bethanyvwatson/racko)*, a terminal-based card sorting game written in Ruby. Now, I’ll be the first to admit: installing and running *Ruby Racko* can be a bit of a pain. You don’t need to be a developer to play it, but if you have zero experience using a command-line terminal, you’re probably going to have a rough time. 
 
 With this in mind, I created a [user-guide](https://bethanyvwatson.gitbooks.io/ruby-racko/content) using [GitBook](http://www.gitbook.com).
 
