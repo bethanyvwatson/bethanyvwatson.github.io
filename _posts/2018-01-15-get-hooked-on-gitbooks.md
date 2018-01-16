@@ -14,11 +14,11 @@ categories:
 
 I recently published a demo of *[Ruby Racko](https://github.com/bethanyvwatson/racko)*, a terminal-based card sorting gamewritten in Ruby. Now, I’ll be the first to admit: installing and running *Ruby Racko* can be a bit of a pain. You don’t need to be a developer to play it, but if you have zero experience using a command-line terminal, you’re probably going to have a rough time. 
 
-With this in mind, I also created a [user-guide](https://bethanyvwatson.gitbooks.io/ruby-racko/content) - you know, so as not to disappoint the millions of Mac OS users who *would* have played my dinky little game *if only* they could have figured out that they needed to type `chmod 755 playRacko` into their terminal *before* trying to execute the file. 
+With this in mind, I created a [user-guide](https://bethanyvwatson.gitbooks.io/ruby-racko/content) using [GitBook](http://www.gitbook.com).
 
-Disaster avoided. Phew!
+Writing the user-guide proved surprisingly satisfying. Even fun! But discovering GitBook has to be the best part of the whole experience.
 
-But seriously though, writing the user-guide proved surprisingly satisfying. I’m glad I made it. And not least of all because doing so led me to discover GitBook!
+I'm hooked.
 
 # GitBook: Documentation Made Easy
 
