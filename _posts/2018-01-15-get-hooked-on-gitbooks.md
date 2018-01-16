@@ -67,6 +67,6 @@ Saving your document (“publishing” it) does not instantly update the doc in 
 
 # Go On, Give GitBook a Shot!
 
-Visit [www.gitbook.com](http://www.gitbook.com) to try GitBook today! I'm like 97% you won't regret it. 
+Visit [www.gitbook.com](http://www.gitbook.com) to try GitBook today! I'm like 97% sure you won't regret it. 
 
 
