@@ -171,7 +171,6 @@ The `loves_cheese?` method only exists on the `franks_dog` object because it is 
 * A Lambda is a Proc that follows slightly different rules for argument agreement and return behavior.
 
 ### 10. What is the difference between a Proc and a Lambda?
-
 For a quick and easy comparison, you might say:
 
 * All Lambdas are Procs, but not all Procs are Lambdas.
